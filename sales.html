@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>АТБ Маркет — Акції</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&family=Mulish:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sales.css">
+</head>
+<body>
+
+<!-- ── БІГУЧИЙ РЯДОК ── -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">🔥 Акції щодня</span>
+    <span class="ticker-item">🚚 Доставка від 1 години</span>
+    <span class="ticker-item">💳 Безкоштовно від 500 ₴</span>
+    <span class="ticker-item">🛒 Понад 12 000 товарів</span>
+    <span class="ticker-item">✦ Знижки до 50%</span>
+    <span class="ticker-item">📍 1200+ магазинів по Україні</span>
+    <span class="ticker-item">🔥 Акції щодня</span>
+    <span class="ticker-item">🚚 Доставка від 1 години</span>
+    <span class="ticker-item">💳 Безкоштовно від 500 ₴</span>
+    <span class="ticker-item">🛒 Понад 12 000 товарів</span>
+    <span class="ticker-item">✦ Знижки до 50%</span>
+    <span class="ticker-item">📍 1200+ магазинів по Україні</span>
+  </div>
+</div>
+
+<!-- ── HEADER ── -->
+<header>
+  <a class="logo" href="index.html">АТБ<span>.</span></a>
+
+  <nav>
+    <a class="nav-link" href="index.html#catalog">Каталог</a>
+    <a class="nav-link active" href="sales.html">Акції</a>
+    <a class="nav-link" href="index.html#delivery">Доставка</a>
+    <a class="nav-link" href="index.html#faq">FAQ</a>
+    <a class="nav-link" href="index.html#contacts">Контакти</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="cart-wrap">
+      <div class="cart-btn">🛒 Кошик <span class="cart-count">3</span></div>
+      <div class="cart-popup">
+        <p class="cart-popup-title">МІЙ КОШИК</p>
+        <div class="cart-item">
+          <div><strong>Чипси Lay's</strong>× 1</div>
+          <div class="cart-item-price">120 ₴</div>
+        </div>
+        <div class="cart-item">
+          <div><strong>Сухарики Flint</strong>× 2</div>
+          <div class="cart-item-price">42 ₴</div>
+        </div>
+        <div class="cart-item">
+          <div><strong>Анчоуси сушені</strong>× 1</div>
+          <div class="cart-item-price">52 ₴</div>
+        </div>
+        <div class="cart-total">
+          <span>Разом:</span><span class="red">214 ₴</span>
+        </div>
+        <a class="cart-checkout" href="#">Оформити замовлення →</a>
+      </div>
+    </div>
+    <a class="btn-sale active-page" href="sales.html">🔥 Акції</a>
+  </div>
+</header>
+
+<!-- ── HERO АКЦІЙ ── -->
+<section class="sales-hero">
+  <div class="sales-hero-inner">
+    <p class="hero-label">Тільки зараз</p>
+    <h1 class="sales-hero-title">Гарячі<br><em>знижки</em><br>тижня</h1>
+    <p class="sales-hero-sub">Оновлюємо акції щодня — встигни до кінця тижня!</p>
+    <div class="countdown-wrap">
+      <p class="countdown-label">До кінця акції:</p>
+      <div class="countdown">
+        <div class="countdown-block"><span class="countdown-num">02</span><span class="countdown-unit">дні</span></div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block"><span class="countdown-num">14</span><span class="countdown-unit">год</span></div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block"><span class="countdown-num">37</span><span class="countdown-unit">хв</span></div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-block"><span class="countdown-num">09</span><span class="countdown-unit">сек</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="sales-hero-right">
+    <span class="hero-bg-text">SALE</span>
+    <div class="hero-badge-big">до&nbsp;<em>-50%</em></div>
+    <img class="sales-hero-img" src="https://napoli.ua/content/uploads/images/46_sklad_produktov_pitanija.png" alt="акції АТБ" />
+  </div>
+</section>
+
+<!-- ── ФІЛЬТР КАТЕГОРІЙ ── -->
+<div class="filter-bar">
+  <input class="filter-radio" type="radio" id="f-all"      name="filters" checked>
+  <input class="filter-radio" type="radio" id="f-chips"    name="filters">
+  <input class="filter-radio" type="radio" id="f-crackers" name="filters">
+  <input class="filter-radio" type="radio" id="f-fish"     name="filters">
+  <input class="filter-radio" type="radio" id="f-drinks"   name="filters">
+
+  <div class="filter-labels">
+    <label class="filter-label lbl-all"      for="f-all">Усі акції</label>
+    <label class="filter-label lbl-chips"    for="f-chips">Чипси</label>
+    <label class="filter-label lbl-crackers" for="f-crackers">Крекери / Сухарики</label>
+    <label class="filter-label lbl-fish"     for="f-fish">Риба / Горіхи</label>
+    <label class="filter-label lbl-drinks"   for="f-drinks">Напої</label>
+  </div>
+
+  <!-- ── СІТКА АКЦІЙНИХ ТОВАРІВ ── -->
+  <div class="sales-grid">
+
+    <!-- CHIPS -->
+    <article class="sale-card cat-chips">
+      <div class="sale-badge">-25%</div>
+      <span class="card-tag">Чипси</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://cdn.27.ua/original/0a/27/7080487_2.jpeg" alt="Лейс">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+      </div>
+      <h3 class="card-name">Чипси Lay's Лобстер</h3>
+      <p class="card-desc">Рифлені МАХ — насичений смак для тих, хто обирає найкраще</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">160 ₴</p>
+          <p class="card-price">120 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 2 дні</div>
+    </article>
+
+    <article class="sale-card cat-chips">
+      <div class="sale-badge sale-badge--hot">-40%</div>
+      <span class="card-tag">Курячі снеки</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://good-product.kh.ua/content/images/46/869x1199l80mc0/chypsy-kurynye-s-soevym-sousom-riabchyk-30-h-12600873184713.jpg" alt="Рябчик">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+      </div>
+      <h3 class="card-name">Рябчик</h3>
+      <p class="card-desc">Курячі чипси з насиченим смаком соєвого соусу</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">142 ₴</p>
+          <p class="card-price">85 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 1 день</div>
+    </article>
+
+    <!-- CRACKERS -->
+    <article class="sale-card cat-crackers">
+      <div class="sale-badge">-30%</div>
+      <span class="card-tag">Сухарики</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://icf.listex.info/300x200/5185520c-7d6e-899d-36ad-483c6d5804f9.png" alt="Flint">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+      </div>
+      <h3 class="card-name">Сухарики Flint</h3>
+      <p class="card-desc">Зі смаком Креветки з соусом Тар-Тар всередині</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">30 ₴</p>
+          <p class="card-price">21 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 3 дні</div>
+    </article>
+
+    <article class="sale-card cat-crackers">
+      <div class="sale-badge">-20%</div>
+      <span class="card-tag">Крекери</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://zismakom.com.ua/image/cache/catalog/category/crecers_cheeken_80-vidnovleno-570x570.png" alt="The Crackers">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <h3 class="card-name">The Crackers</h3>
+      <p class="card-desc">Хрусткі крекери зі смаком курки гриль</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">56 ₴</p>
+          <p class="card-price">45 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 4 дні</div>
+    </article>
+
+    <!-- FISH -->
+    <article class="sale-card cat-fish">
+      <div class="sale-badge sale-badge--hot">-50%</div>
+      <span class="hit-badge">ХІТ</span>
+      <span class="card-tag">Сушена риба</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://content.rozetka.com.ua/goods/images/big/339765351.jpg" alt="Анчоуси">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+      </div>
+      <h3 class="card-name">Анчоуси сушені</h3>
+      <p class="card-desc">Солона риба — ідеальний вибір до пива чи фільму</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">104 ₴</p>
+          <p class="card-price">52 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 1 день</div>
+    </article>
+
+    <article class="sale-card cat-fish">
+      <div class="sale-badge">-35%</div>
+      <span class="card-tag">Горіхи</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://www.snackproduction.com.ua/storage/app/uploads/public/682/30b/bf7/thumb_2173_600_900_0_0_auto.png" alt="Big Bob">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+      </div>
+      <h3 class="card-name">Горіхи Big Bob</h3>
+      <p class="card-desc">Зі смаком варених раків — незвичайно та смачно</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">74 ₴</p>
+          <p class="card-price">48 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 2 дні</div>
+    </article>
+
+    <!-- DRINKS -->
+    <article class="sale-card cat-drinks">
+      <div class="sale-badge">-15%</div>
+      <span class="card-tag">Напої</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://storage.alifshop.tj/media/images/alifshop/37100/gazirovannyy-napitok-coca-cola-classic-1-5-l-1749635785914.png" alt="Pepsi">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+      </div>
+      <h3 class="card-name">Coca Cola 1.5л</h3>
+      <p class="card-desc">Класична кола — ідеальне доповнення до снеків</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">65 ₴</p>
+          <p class="card-price">55 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 5 днів</div>
+    </article>
+
+    <article class="sale-card cat-drinks">
+      <div class="sale-badge sale-badge--hot">-45%</div>
+      <span class="card-tag">Енергетик</span>
+      <div class="card-img-wrap">
+        <img class="card-img" src="https://icf.listex.info/med/60ee0fe9-88a4-9566-dc95-8170f3016746.jpg" alt="Monster">
+        <div class="card-overlay"><span class="card-overlay-txt">Детальніше</span></div>
+      </div>
+      <div class="stars">
+        <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+      </div>
+      <h3 class="card-name">Енергетик Monster</h3>
+      <p class="card-desc">Потужний заряд енергії на весь день — 500 мл</p>
+      <div class="card-footer">
+        <div class="price-block">
+          <p class="price-old">90 ₴</p>
+          <p class="card-price">50 <span>₴</span></p>
+        </div>
+        <a class="btn-card" href="#"><span class="btn-card-txt">Купити</span></a>
+      </div>
+      <div class="sale-timer">⏱ Ще 2 дні</div>
+    </article>
+
+  </div>
+</div>
+
+<!-- ── ПРОМО БАНЕР ── -->
+<div class="promo-full">
+  <div class="promo-full-inner">
+    <p class="section-label">Спеціальна пропозиція</p>
+    <h2 class="promo-full-title">2+1 = безкоштовно<br><em>на всі снеки</em></h2>
+    <p class="promo-full-desc">Купуй 2 будь-яких снеки — третій отримуй у подарунок. Акція діє до кінця тижня в усіх магазинах АТБ та онлайн.</p>
+    <a class="btn-primary" href="index.html#catalog">
+      <span>Перейти до каталогу</span>
+      <span class="btn-arrow">→</span>
+    </a>
+  </div>
+  <span class="promo-full-bg">2+1</span>
+</div>
+
+<!-- ── NEWSLETTER ── -->
+<div class="newsletter">
+  <div>
+    <p class="section-label">Не пропусти</p>
+    <h2 class="nl-title">Акції та<br><em>новинки</em> — першим</h2>
+    <p class="nl-sub">Підпишись на розсилку і отримуй найкращі пропозиції прямо на пошту. Без спаму — тільки смачні знижки.</p>
+  </div>
+  <div class="nl-form">
+    <div class="nl-field">
+      <input class="nl-input" type="email" placeholder="Ваш email...">
+      <button class="nl-submit">Підписатись</button>
+    </div>
+    <p class="nl-note">✓ Ніякого спаму. Відписатись можна в будь-який момент.</p>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer id="contacts">
+  <div class="footer-col">
+    <p class="footer-logo-text">АТБ<span>.</span></p>
+    <p class="footer-slogan">Найулюбленіший магазин —<br>поруч з тобою!</p>
+    <div class="footer-contact">
+      <p>🏠 <strong>Адреса:</strong> м. Київ, вул. Мазепи, 14/3</p>
+      <p>📞 <strong>Телефон:</strong> 0930-343-919</p>
+      <p>✉️ <strong>Email:</strong> info@atbmarket.ua</p>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Навігація</h4>
+    <ul class="footer-links">
+  <li><a href="index.html#catalog">Каталог</a></li>
+  <li><a href="sales.html">Акції</a></li>
+  <li><a href="index.html#delivery">Доставка</a></li>
+  <li><a href="index.html#faq">FAQ</a></li>
+  <li><a href="index.html#contacts">Контакти</a></li>
+</ul>
+  </div>
+  <div class="footer-col">
+    <h4>Категорії</h4>
+    <ul class="footer-links">
+      <li><a href="#">Чипси</a></li>
+      <li><a href="#">Сухарики</a></li>
+      <li><a href="#">Сушена риба</a></li>
+      <li><a href="#">Горіхи</a></li>
+      <li><a href="#">Крекери</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p class="footer-copy">© 2025 <span class="red">АТБ Маркет</span>. Усі права захищені.</p>
+  <p class="footer-copy">Зроблено з ❤️ в Україні</p>
+</div>
+
+<a class="back-top" href="#" title="Вгору">↑</a>
+
+</body>
+</html>
